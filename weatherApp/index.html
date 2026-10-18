@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌤 Weather Predictor</h1>
+        <p class="subtitle">Predict the weather of any city</p>
+
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city Name">
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+        <div class="weather-card">
+            <h2 id="city">Search a City</h2>
+            <div id="icon">🌤️</div>
+            <h3 id="temperature">--°C</h3>
+            <p id="condition">--</p>
+
+            <div class="details">
+                <div>
+                    💧
+                    <p>Humidity</p>
+                    <strong id="humidity">
+                        --%
+                    </strong>
+                </div>
+                <div>
+                    💨
+                    <p>Wind</p>
+                    <strong id="wind">
+                        -- km/h
+                    </strong>
+                </div>
+                <div>
+                    🌡️
+                    <p>Feels Like</p>
+                    <strong id="feels">
+                        --°C
+                    </strong>
+                </div>
+            </div>
+
+            <!-- C analysis -->
+
+            <div class="advice-box">
+                <h3>🤖Weather Analysis</h3>
+
+                <p id="temperatureAdvice">
+                    Temperature analysis will appear here.
+                </p>
+
+                <p id="humidityAdvice">
+                    Humidity analysis will appear here.
+                </p>
+
+                <p id="windAdvice">
+                    Wind analysis will appear here.
+                </p>
+
+                <p id="rainAdvice">
+                    Rain analysis will appear here.
+                </p>
+
+                <p id="generalAdvice">
+                    Weather advice will appear here.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
